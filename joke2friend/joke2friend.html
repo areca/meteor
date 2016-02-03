@@ -1,0 +1,23 @@
+<head>
+  <title>joke2friend</title>
+</head>
+
+<body>
+  <h1>Welcome to joke2friend!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <form id="my-form">
+        <label for="name"> Name: </label>
+        <input type="text" id="name" />
+        <label for="surname"> Surname: </label>
+        <input type="text" id="surname" />
+        <button type="submit">Get Joke</button>
+    </form>
+    <div id="joke">
+      <textarea style="width:700px;height:100px">{{ joke }}</textarea>
+
+    </div>
+</template>
